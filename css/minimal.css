@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Rubik Mono';
+    src: url(fonts/RubikMono.ttf), format(truetype);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +12,6 @@
 .app-layout {
     width: 1303px;
     height: 614px;
-    background: white;
     position: fixed;
     left: 0;
     right: 0;
@@ -23,6 +27,28 @@
     -webkit-backdrop-filter: blur( 4px);
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.app-column-1 {
+    width: 434.3px;
+    height: 614px;
+    float: left;
+}
+
+.app-column-2 {
+    width: 434.3px;
+    height: 614px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.app-column-3 {
+    width: 434.3px;
+    height: 614px;
+    float: right;
 }
 
 @media (max-width: 1024px) {
